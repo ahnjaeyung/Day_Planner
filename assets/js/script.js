@@ -9,8 +9,6 @@ var time = setInterval(function () {
     }
 }, 1000)
 
-// $("#currentDay").text(moment().format("LLL"));
-
 function rowColor() {
     $(".time-block").each(function () {
         var hourId = $(this).attr("id");
