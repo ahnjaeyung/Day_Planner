@@ -1,6 +1,15 @@
 var savedPlans = Object.keys(localStorage);
 var saveBtn = $(".saveBtn");
 
+var timer = true
+var time = setInterval(function () {
+    if (timer === true) {
+        var currentTime = moment().format("MMM Do, YYYY, h:mm:ss");
+        $("#timeDisplay").text(currentTime);
+        // console.log(currentTime);
+    }
+}, 1000)
+
 saveBtn.on("click", function() {
     // console.log(this);
     var taskInput = $(this).siblings(".description").val();
