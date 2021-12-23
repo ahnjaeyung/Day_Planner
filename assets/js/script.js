@@ -2,7 +2,14 @@ var savedPlans = Object.keys(localStorage);
 var saveBtn = $(".saveBtn");
 var timer = true
 var currentHour = moment().hours();
-$("#currentDay").text(moment().format("LLL"));
+
+var time = setInterval(function () {
+    if (timer === true) {
+        $("#currentDay").text(moment().format("LLL"));
+    }
+}, 1000)
+
+// $("#currentDay").text(moment().format("LLL"));
 
 function rowColor() {
     $(".time-block").each(function () {
