@@ -16,13 +16,13 @@ function rowColor() {
         intHourRow = parseInt(hourRow)
         // console.log(intHourRow);
         intCurrentHour = parseInt(currentHour)
-        if (parseInt(intHourRow) < parseInt(currentHour)) {
+        if (parseInt(intHourRow) < currentHour) {
             $(this).addClass("past");
         }
-        else if (parseInt(intHourRow) === parseInt(currentHour)) {
+        else if (parseInt(intHourRow) === currentHour) {
             $(this).addClass("present");
         }
-        else if (parseInt(intHourRow) > parseInt(currentHour)) {
+        else if (parseInt(intHourRow) > currentHour) {
             $(this).addClass("future");
         }
     }
@@ -30,7 +30,6 @@ function rowColor() {
 }; //end of rowColor function definition
 rowColor();
 saveBtn.on("click", function () {
-    // console.log(this);
     var taskInput = $(this).siblings(".description").val();
     var timeSlot = $(this).parent().attr("id");
     localStorage.setItem(timeSlot, taskInput);
