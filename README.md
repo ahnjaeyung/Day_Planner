@@ -1,4 +1,4 @@
-# Homework 5: Day Planner #
+# Day Planner #
 Day Planner - Jae Ahn
 ![Day Planner](./assets/images/screenshot.png)
 This is a work day scheduler application that runs in the browser and allows a user to save events for each hour of the work day (from 9 AM through 5 PM).  
@@ -19,4 +19,4 @@ Some of the methods used in creating this application were found from resources 
 
 Link to Deployed Application
 ---------------
-[Day Planner](https://ahnjaeyung.github.io/Homework_5_Day_Planner/)
+[Day Planner](https://ahnjaeyung.github.io/Day_Planner/)
